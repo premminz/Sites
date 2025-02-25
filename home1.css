@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #414141;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px); 
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}     
+.blur-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: background-color 0.3s ease-in-out; 
+  } 
+
+.logo img {
+    height: 34px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    margin-left: 20px;
+    
+}
+
+nav ul li a {
+    color: #f8f8f8e3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+
+
+
+
+
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+
+img.responsive-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.7); 
+    border-radius: 20px; 
+}
+
+.intro-image {
+    flex: 1;
+    order: 2;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.intro-text {
+    max-width: 50%;
+    flex: 1;
+    text-align: left;
+    order: 1;
+    margin: 6px;
+    font-size: 20px; 
+    font-weight: 300; 
+    color: #555; 
+    
+}
+.intro-text h2 {
+    font-size: 12px;  
+     color: #333;         
+     margin: 15px;           
+     padding-right: 20px;
+     flex-grow: 1;    
+     font-family: 'Montserrat', sans-serif;
+} 
+
+.intro-section h2 {
+    font-size: 40px;
+    color: #111111;         
+    margin-bottom: 10px; 
+    text-align: left;
+    margin-right: 20px;  
+    
+}
+.intro-section h2 {
+    margin: 0px 0px 20px;
+}
+.intro-text p {
+    margin: 0px 0px 8px;
+}
+
+
+.intro-text {
+    font-size: 16px;   
+    color: #000000;         
+    line-height: 1.6;
+    margin-bottom: 20px; 
+    margin-right: 20px;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social-icons{
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.social-icons a {
+    margin: 0 18px;
+    color: #565656; 
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+.social-icons a:hover {
+    color: #d5d2d2; 
+}
+
+.intro-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+
+}
+.skills-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #000000;
+}
+.skills-section:before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #f9f9f9; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+.skills-section h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #f5F5F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skill-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-box {
+    background-color: #000000;
+    border: 1px solid #212121;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.skill-box:hover {
+    background-color: #1c1c1c; 
+}
+.skill-box:hover h3,
+.skill-box:hover p, 
+.skill-box:hover ul li {
+    color: #f9f9f9;  
+}
+
+.skill-box h3 {
+    font-size: 18px;
+    color: #EDEDED;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat' , sans-serif
+}
+
+
+.skill-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.skill-box ul li {
+    color: #FFFFFFB3;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif ;
+    margin-bottom: 12px; 
+    line-height: 1.6; 
+}
+
+
+
+.skill-box .quote {
+    font-size: 40px;
+    margin: 0;
+    line-height: 0;
+    color: rgb(216, 216, 216);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+.footer-links li a:hover {
+    color:#e2e2e2;
+    text-decoration: underline;
+}
+
+.footer-social-icons i {
+    color: #EDEDED; 
+    margin: 0 10px; 
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-social-icons i:hover {
+    color: #bbb8b8; 
+}
+footer p {
+    color: #fdfdfd; 
+    font-size: 12px; 
+    font-family: 'montserrat',sans-serif;
+    margin-top: 10px;
+}
+
+
+/* Responsive Styxles */
+@media (max-width: 768px) {
+    
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 9999;
+      }
+
+    .intro-text h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 15px;  
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+
+    .intro-text p {
+        font-family: 'Montseraat' sans-serif;
+        font-size: 12px
+    }
+    .intro-text p {
+        margin: 0px 0px 6px;
+    }
+    .social-icons a i {
+        padding: 15px 0px 25px;
+        font-size: 18px;
+    }
+
+    .skills-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .skill-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .skill-box h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .skill-box p {
+        font-size: 14px;
+    }
+
+    .skill-box .quote {
+        font-size: 30px;
+    }
+    .skill-box ul li {
+        font-size: 12px;
+    }
+    
+
+    
+
+    .intro-section {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .intro-text, .intro-image {
+        max-width: 100%;
+        text-align: center;
+    }
+    .social-icons a{
+        font-size: 1.5rem;
+    }
+
+    .responsive-image {
+        width: 100%;               
+        margin: 0 auto;            
+    }
+    .intro-image{
+        margin: auto;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+}
